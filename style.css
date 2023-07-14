@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* plus interressant d'utiliser le REM que le px pour le responsive s'adapte mieux, l'utilisateur controle la taille du texte.1REM =16px (par defaut, la taille de police est à 100%) */
+html{
+    font-size: 62,5%;  /*1rem= 10px*/
+    
+}
+body{
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    
+
+}
+.container{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C3C54;
+}
+.switch{
+    width:90px;
+    height:30px;
+    background-color: #1E2939;
+    border-radius: 15px;
+    position: relative;
+    border:1px solid #1E2939;
+    padding:1rem;
+}
+.btn{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;/*Par rapport a la div switch*/
+    top: -1px; /*Evite un décalage*/
+    left: -1px;/*Evite un décalage*/
+}
+.switch i{
+    position: absolute;
+    top:6px ;
+    right:23px ;
+    color: #FFD363;
+}
+.btn-change{
+   right : -1px;
+    left : auto;/*Nécessaire pour ne pas prendre en compte la valeur left  */
+}
+.icone-change{
+    left:20px;
+}
+.switch-change{
+    background-color: #61b3ff;
+    border:1px solid #61b3ff;
+}
+.container-change{
+    background-color: #CBE6FF;
+  }
